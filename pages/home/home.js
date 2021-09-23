@@ -1,23 +1,17 @@
-// pages/home/home.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
-  },
-
-  /**
-   * 组件的初始数据
-   */
+Page({
   data: {
-
+    name: 'cya',
+    age: 18,
+    counter: 0,
+    lists: [
+      {id: '001', name: 'xh', age: 18},
+      {id: '002', name: 'hy', age: 19},
+      {id: '003', name: 'gb', age: 20}
+    ]
   },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+  handleBtnClick() {
+    this.setData({
+      counter: this.data.counter + 1
+    })
   }
 })

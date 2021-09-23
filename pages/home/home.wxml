@@ -1,2 +1,8 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view>Hello {{ name }}</view>
+
+<view wx:for="{{lists}}" wx:key="index">{{ item.name }}</view>
+
+<view>当前计数: {{ counter }}</view>
+
+<button size="mini" bindtap="handleBtnClick">+</button>
